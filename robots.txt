@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /cart
+Disallow: /checkout
+Disallow: /admin
+
+Sitemap: https://leminhtu19022006-ai.github.io/hoc-di-chu/sitemap.xml
