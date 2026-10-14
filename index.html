@@ -338,7 +338,7 @@
 
             // Cập nhật URL hash để SEO và sitemap hoạt động
             if (pageName === 'home') {
-                history.pushState(null, '', '#home');
+                history.pushState(null, '', window.location.pathname);
                 document.getElementById('page-home').classList.add('active');
                 document.getElementById('nav-home').classList.add('active');
                 document.title = "Thiên Long - Dụng Cụ Học Tập & Văn Phòng Phẩm Chính Hãng";
@@ -513,8 +513,7 @@
         // Xử lý khi người dùng bấm nút Back/Forward của trình duyệt
         window.addEventListener('popstate', function() {
             const hash = window.location.hash;
-            if (hash === '' || hash === '#home') {
-                navigateTo('home');
+           if (hash === '' || hash === '#home' || hash === '#') navigateTo('home');
             } else if (hash.startsWith('#san-pham-')) {
                 const productId = parseInt(hash.replace('#san-pham-', ''));
                 navigateTo('detail', null, productId);
