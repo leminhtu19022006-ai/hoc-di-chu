@@ -1,4 +1,13 @@
+# Robots.txt for Thien Long Website
+# Domain: https://leminhtu19022006-ai.github.io/hoc-di-chu/
+
 User-agent: *
 Allow: /
 
+# Cho phép tất cả bot truy cập
+Disallow: /cart
+Disallow: /checkout
+Disallow: /admin
+
+# Sitemap
 Sitemap: https://leminhtu19022006-ai.github.io/hoc-di-chu/sitemap.xml
