@@ -16,6 +16,7 @@
     <meta property="og:title" content="Thiên Long - Dụng Cụ Học Tập & Văn Phòng Phẩm Chính Hãng">
     <meta property="og:description" content="Mua sắm dụng cụ học tập, văn phòng phẩm, bút viết chính hãng Thiên Long. Giá tốt, giao hàng nhanh.">
     <meta property="og:image" content="https://via.placeholder.com/1200x630/00469b/ffffff?text=Thien+Long">
+    <meta property="og:url" content="https://leminhtu19022006-ai.github.io/hoc-di-chu/">
     <meta property="og:site_name" content="Thiên Long">
     
     <!-- Twitter Card -->
@@ -24,9 +25,12 @@
     <meta name="twitter:description" content="Mua sắm dụng cụ học tập, văn phòng phẩm chính hãng Thiên Long.">
     <meta name="twitter:image" content="https://via.placeholder.com/1200x630/00469b/ffffff?text=Thien+Long">
 
-    <!-- ==================== CANONICAL LINK (SẼ ĐƯỢC JS CẬP NHẬT ĐỘNG) ==================== -->
-    <!-- Thẻ này sẽ tự động được JS cập nhật theo URL hiện tại để tránh lỗi Variant -->
-    <link rel="canonical" href="" id="canonical-link">
+    <!-- ==================== CANONICAL LINK (CỐ ĐỊNH - ĐÃ SỬA LỖI MISSING) ==================== -->
+    <link rel="canonical" href="https://leminhtu19022006-ai.github.io/hoc-di-chu/">
+
+    <!-- ==================== HREFLANG TAGS ==================== -->
+    <link rel="alternate" hreflang="vi" href="https://leminhtu19022006-ai.github.io/hoc-di-chu/" />
+    <link rel="alternate" hreflang="x-default" href="https://leminhtu19022006-ai.github.io/hoc-di-chu/" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
@@ -40,7 +44,7 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Thiên Long",
-      "url": "https://thienlong.vn/",
+      "url": "https://leminhtu19022006-ai.github.io/hoc-di-chu/",
       "logo": "https://via.placeholder.com/200x200/00469b/ffffff?text=TL",
       "contactPoint": {
         "@type": "ContactPoint",
@@ -51,7 +55,6 @@
     </script>
 
     <style>
-        /* --- CSS (Giữ nguyên bản trước) --- */
         :root { --primary-blue: #00469b; --light-blue: #eaf4fc; --accent-red: #d32f2f; --text-dark: #333; --text-gray: #666; --border-color: #ddd; --white: #ffffff; }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: #f4f4f4; color: var(--text-dark); }
@@ -300,25 +303,8 @@
         <a href="https://m.me/thienlong" class="float-btn btn-mess" target="_blank" rel="noopener" aria-label="Liên hệ qua Messenger"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
     </div>
 
-    <!-- ==================== SCRIPT ==================== -->
     <script>
-        // --- 1. CẬP NHẬT CANONICAL ĐỘNG ĐỂ SỬA LỖI VARIANT ---
-        // Lấy URL hiện tại của trang (bỏ qua hash # và query string không cần thiết)
-        function updateCanonical() {
-            const baseUrl = window.location.origin + window.location.pathname;
-            const canonicalLink = document.getElementById('canonical-link');
-            if (canonicalLink) {
-                canonicalLink.setAttribute('href', baseUrl);
-                console.log('✅ Canonical updated to:', baseUrl);
-            }
-            
-            // Cập nhật cả og:url cho đồng bộ
-            const ogUrl = document.querySelector('meta[property="og:url"]');
-            if (ogUrl) ogUrl.setAttribute('content', baseUrl);
-        }
-        updateCanonical();
-
-        // --- 2. DỮ LIỆU SẢN PHẨM ---
+        // ==================== DỮ LIỆU SẢN PHẨM ====================
         const products = [
             { id: 1, name: "Combo Vui Hè Lớp 1 - 12 Món", price: 231930, oldPrice: 257700, discount: 10, sold: 411, status: "Hết hàng", image: "https://via.placeholder.com/300x300/eee/999?text=Combo+Lop+1", alt: "Combo Vui Hè Lớp 1 gồm 12 món dụng cụ học tập cho bé", description: "Bộ combo bao gồm đầy đủ dụng cụ học tập cho bé vào lớp 1: Bút chì, tẩy, thước kẻ, hộp bút, vở... Chất liệu an toàn, màu sắc bắt mắt.", category: "hoc-tap" },
             { id: 2, name: "[Combo Cấp 1] Trọn Bộ Dụng Cụ Học Tập Lớp 2", price: 408150, oldPrice: 453500, discount: 10, sold: 144, status: "Hết hàng", image: "https://via.placeholder.com/300x300/eee/999?text=Combo+Lop+2", alt: "Trọn bộ dụng cụ học tập lớp 2 bao gồm bút mực, bút chì, compa", description: "Trọn bộ dụng cụ học tập dành cho học sinh lớp 2. Bao gồm bút mực, bút chì, compa, thước đo độ, và các loại vở ô ly.", category: "hoc-tap" },
@@ -332,11 +318,12 @@
 
         let cartCount = 0; 
 
+        // ==================== HÀM ĐIỀU HƯỚNG (SỬA LỖI URL SẠCH) ====================
         function navigateTo(pageName, categorySlug = null, productId = null) {
             document.querySelectorAll('.page-section').forEach(section => section.classList.remove('active'));
             document.querySelectorAll('.nav-list li').forEach(li => li.classList.remove('active'));
 
-            // Cập nhật URL hash để SEO và sitemap hoạt động
+            // SỬA LỖI: Không dùng '#home' nữa, dùng '/' để URL sạch
             if (pageName === 'home') {
                 history.pushState(null, '', window.location.pathname);
                 document.getElementById('page-home').classList.add('active');
@@ -510,11 +497,11 @@
             });
         }
 
-        // Xử lý khi người dùng bấm nút Back/Forward của trình duyệt
+        // ==================== XỬ LÝ NÚT BACK/FORWARD ====================
         window.addEventListener('popstate', function() {
             const hash = window.location.hash;
-           if (hash === '' || hash === '#home' || hash === '#') navigateTo('home');
-            } else if (hash.startsWith('#san-pham-')) {
+            if (hash === '' || hash === '#home' || hash === '#') navigateTo('home');
+            else if (hash.startsWith('#san-pham-')) {
                 const productId = parseInt(hash.replace('#san-pham-', ''));
                 navigateTo('detail', null, productId);
             } else {
@@ -523,28 +510,21 @@
             }
         });
 
-        // --- KHỞI TẠO: Đọc hash từ URL khi tải trang ---
+        // ==================== KHỞI TẠO ====================
         window.onload = function() {
             renderHomeProducts();
-            
-            // Kiểm tra hash trên URL để mở đúng trang
             const hash = window.location.hash;
-            if (hash && hash !== '#home') {
+            if (hash && hash !== '#home' && hash !== '#') {
                 if (hash.startsWith('#san-pham-')) {
                     const productId = parseInt(hash.replace('#san-pham-', ''));
                     navigateTo('detail', null, productId);
                 } else {
                     const categorySlug = hash.replace('#', '');
                     const validCategories = ['hoc-tap', 'van-phong', 'my-thuat', 'outlet', 'top-ban-chay'];
-                    if (validCategories.includes(categorySlug)) {
-                        navigateTo('category', categorySlug);
-                    } else {
-                        navigateTo('home');
-                    }
+                    if (validCategories.includes(categorySlug)) navigateTo('category', categorySlug);
+                    else navigateTo('home');
                 }
-            } else {
-                navigateTo('home');
-            }
+            } else navigateTo('home');
         };
     </script>
 </body>
