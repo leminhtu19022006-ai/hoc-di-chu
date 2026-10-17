@@ -269,7 +269,7 @@ h1[data-hidden="true"]{display:none !important}
 <nav class="breadcrumb" aria-label="Breadcrumb">
 <a href="/">Trang chủ</a> / <a href="/danh-muc">Danh mục</a> / <span id="breadcrumb-category-name">Danh mục</span>
 </nav>
-<h1 class="page-title" id="category-title" data-hidden="true">Danh mục sản phẩm</h1>
+<h1 class="page-title" id="category-title" style="display:none;">Danh mục sản phẩm</h1>
 <div class="main-content">
 <aside class="sidebar" aria-label="Bộ lọc sản phẩm">
 <div class="filter-group"><h3 class="filter-title">Sắp xếp <i class="fa-solid fa-angle-down" aria-hidden="true"></i></h3></div>
@@ -406,7 +406,10 @@ function showCurrentH1(){
     var activeSection = document.querySelector('.page-section.active');
     if(activeSection){
         var h1 = activeSection.querySelector('h1');
-        if(h1){ h1.removeAttribute('data-hidden'); }
+        if(h1){
+            h1.style.display = 'block'; // Hiển thị H1 của trang hiện tại
+            h1.removeAttribute('data-hidden');
+        }
     }
 }
 
