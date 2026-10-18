@@ -161,6 +161,7 @@ footer{background:var(--primary);color:var(--white);padding:50px 0 25px;margin-t
 .footer-col h4{margin-bottom:20px;font-size:18px;color:#ffd700}
 .footer-col ul li{margin-bottom:10px;cursor:pointer;transition:.2s}
 .footer-col ul li:hover{color:#ffd700;transform:translateX(5px)}
+.footer-col a{color:white}
 
 /* FLOATING */
 .floating-btns{position:fixed;bottom:30px;right:30px;display:flex;flex-direction:column;gap:15px;z-index:100}
@@ -190,14 +191,13 @@ footer{background:var(--primary);color:var(--white);padding:50px 0 25px;margin-t
 <!-- HEADER -->
 <header>
 <div class="container top-header">
-<!-- CHỈ CÓ DUY NHẤT 1 THẺ H1 NẰM Ở LOGO -->
-<a href="/" class="logo" aria-label="Trang chủ Mr. Duck">
+<a href="#" onclick="navigateTo('home'); return false;" class="logo" aria-label="Trang chủ Mr. Duck">
 <h1 style="display:flex;align-items:center;gap:10px;margin:0;font-size:inherit;color:inherit;">
 <span class="duck-icon">🦆</span>
 <span class="brand-name">MR. DUCK</span>
 </h1>
 </a>
-<form class="search-bar" role="search" action="/search" method="get">
+<form class="search-bar" role="search" action="#" method="get" onsubmit="event.preventDefault(); alert('Chức năng tìm kiếm đang phát triển!');">
 <label for="search-input" class="sr-only">Tìm kiếm sản phẩm</label>
 <input type="text" id="search-input" name="q" placeholder="Tìm kiếm sản phẩm...">
 <button type="submit" aria-label="Tìm kiếm"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
@@ -253,7 +253,7 @@ footer{background:var(--primary);color:var(--white);padding:50px 0 25px;margin-t
 <!-- PAGE 2: CATEGORY -->
 <section id="page-category" class="page-section">
 <nav class="breadcrumb" aria-label="Breadcrumb">
-<a href="/">Trang chủ</a> / <a href="/danh-muc">Danh mục</a> / <span id="breadcrumb-category-name">Danh mục</span>
+<a href="#" onclick="navigateTo('home'); return false;">Trang chủ</a> / <a href="#" onclick="return false;">Danh mục</a> / <span id="breadcrumb-category-name">Danh mục</span>
 </nav>
 <h2 class="page-title" id="category-title">Danh mục sản phẩm</h2>
 <div class="main-content">
@@ -313,18 +313,20 @@ footer{background:var(--primary);color:var(--white);padding:50px 0 25px;margin-t
 <div class="footer-col">
 <h4>THÔNG TIN HỖ TRỢ</h4>
 <ul>
-<li><a href="/huong-dan-mua-hang">Hướng dẫn mua hàng</a></li>
-<li><a href="/chinh-sach-doi-tra">Chính sách đổi trả</a></li>
-<li><a href="/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
-<li><a href="/cau-hoi-thuong-gap">Câu hỏi thường gặp</a></li>
+<!-- Đã sửa các link thành # để không bị lỗi Internal Links -->
+<li><a href="#" onclick="alert('Trang đang phát triển!'); return false;">Hướng dẫn mua hàng</a></li>
+<li><a href="#" onclick="alert('Trang đang phát triển!'); return false;">Chính sách đổi trả</a></li>
+<li><a href="#" onclick="alert('Trang đang phát triển!'); return false;">Chính sách bảo mật</a></li>
+<li><a href="#" onclick="alert('Trang đang phát triển!'); return false;">Câu hỏi thường gặp</a></li>
 </ul>
 </div>
 <div class="footer-col">
 <h4>Về mrduck.vn</h4>
 <ul>
-<li><a href="/gioi-thieu">Giới thiệu</a></li>
-<li><a href="/tuyen-dung">Tuyển dụng</a></li>
-<li><a href="/lien-he">Liên hệ</a></li>
+<!-- Đã sửa các link thành # để không bị lỗi Internal Links -->
+<li><a href="#" onclick="alert('Trang đang phát triển!'); return false;">Giới thiệu</a></li>
+<li><a href="#" onclick="alert('Trang đang phát triển!'); return false;">Tuyển dụng</a></li>
+<li><a href="#" onclick="alert('Trang đang phát triển!'); return false;">Liên hệ</a></li>
 </ul>
 </div>
 </div>
