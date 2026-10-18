@@ -5,10 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mr. Duck - Dụng Cụ Học Tập & Văn Phòng Phẩm Chính Hãng</title>
 <meta name="description" content="Mr. Duck - Cửa hàng dụng cụ học tập, văn phòng phẩm chính hãng. Giá tốt, giao nhanh, miễn phí vận chuyển toàn quốc.">
+<meta name="keywords" content="dụng cụ học tập, văn phòng phẩm, bút mr duck, combo học tập, bút chì màu">
 <meta name="robots" content="index, follow">
+<meta name="author" content="Mr. Duck">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mr. Duck - Dụng Cụ Học Tập Chính Hãng">
+<meta property="og:description" content="Mua sắm dụng cụ học tập, văn phòng phẩm chính hãng Mr. Duck.">
+<meta property="og:url" content="https://leminhtu19022006-ai.github.io/hoc-di-chu/">
+<meta property="og:site_name" content="Mr. Duck">
+<meta property="og:image" content="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=630&fit=crop">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mr. Duck - Dụng Cụ Học Tập Chính Hãng">
+<meta name="twitter:description" content="Mua sắm dụng cụ học tập, văn phòng phẩm chính hãng Mr. Duck.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=630&fit=crop">
+
+<!-- Canonical & Hreflang -->
 <link rel="canonical" href="https://leminhtu19022006-ai.github.io/hoc-di-chu/">
+<link rel="alternate" hreflang="vi" href="https://leminhtu19022006-ai.github.io/hoc-di-chu/">
+<link rel="alternate" hreflang="x-default" href="https://leminhtu19022006-ai.github.io/hoc-di-chu/">
+
+<!-- Favicon -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦆</text></svg>">
+
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Schema -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Mr. Duck","url":"https://leminhtu19022006-ai.github.io/hoc-di-chu/","contactPoint":{"@type":"ContactPoint","telephone":"+841900866819","contactType":"customer service"}}
+</script>
 
 <style>
 :root{--primary:#00469b;--primary-dark:#00337a;--accent:#d32f2f;--bg:#f4f4f4;--white:#fff;--text:#333;--gray:#666;--border:#ddd}
@@ -203,13 +232,11 @@ footer{background:var(--primary);color:var(--white);padding:50px 0 25px;margin-t
 <section id="page-home" class="page-section active">
 <div class="banner-home">
 <div class="banner-home-content">
-<!-- Đã chuyển H1 thành H2 -->
 <h2 id="home-title">🦆 Chào mừng đến với Mr. Duck</h2>
 <p>Hệ thống bán lẻ dụng cụ học tập & văn phòng phẩm chính hãng</p>
 <button class="btn btn-primary btn-large" style="width:auto;" onclick="navigateTo('category','hoc-tap')">Mua sắm ngay</button>
 </div>
 </div>
-<!-- Đã chuyển H2 thành H2 (Giữ nguyên) -->
 <h2 class="page-title">Sản phẩm nổi bật</h2>
 <div class="product-grid" id="home-product-grid"></div>
 </section>
@@ -219,7 +246,6 @@ footer{background:var(--primary);color:var(--white);padding:50px 0 25px;margin-t
 <nav class="breadcrumb" aria-label="Breadcrumb">
 <a href="/">Trang chủ</a> / <a href="/danh-muc">Danh mục</a> / <span id="breadcrumb-category-name">Danh mục</span>
 </nav>
-<!-- Đã chuyển H1 thành H2 -->
 <h2 class="page-title" id="category-title">Danh mục sản phẩm</h2>
 <div class="main-content">
 <aside class="sidebar" aria-label="Bộ lọc sản phẩm">
@@ -436,7 +462,6 @@ function renderProductDetail(productId){
 
     var html = '<div class="detail-img-box"><img src="' + product.image + '" alt="' + product.alt + '" loading="eager"></div>';
     html += '<div class="detail-info">';
-    // Đã chuyển H1 thành H2 ở đây
     html += '<h2 class="detail-title" id="detail-title">' + product.name + '</h2>';
     html += '<div class="detail-meta">';
     html += '<span>Thương hiệu: <strong>Mr. Duck</strong></span>';
