@@ -5,37 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mr. Duck - Dụng Cụ Học Tập & Văn Phòng Phẩm Chính Hãng</title>
 <meta name="description" content="Mr. Duck - Cửa hàng dụng cụ học tập, văn phòng phẩm chính hãng. Giá tốt, giao nhanh, miễn phí vận chuyển toàn quốc.">
-<meta name="keywords" content="dụng cụ học tập, văn phòng phẩm, bút mr duck, combo học tập, bút chì màu">
 <meta name="robots" content="index, follow">
-<meta name="author" content="Mr. Duck">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mr. Duck - Dụng Cụ Học Tập Chính Hãng">
-<meta property="og:description" content="Mua sắm dụng cụ học tập, văn phòng phẩm chính hãng Mr. Duck.">
-<meta property="og:url" content="https://leminhtu19022006-ai.github.io/hoc-di-chu/">
-<meta property="og:site_name" content="Mr. Duck">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mr. Duck - Dụng Cụ Học Tập Chính Hãng">
-<meta name="twitter:description" content="Mua sắm dụng cụ học tập, văn phòng phẩm chính hãng Mr. Duck.">
-
-<!-- Canonical & Hreflang -->
 <link rel="canonical" href="https://leminhtu19022006-ai.github.io/hoc-di-chu/">
-<link rel="alternate" hreflang="vi" href="https://leminhtu19022006-ai.github.io/hoc-di-chu/">
-<link rel="alternate" hreflang="x-default" href="https://leminhtu19022006-ai.github.io/hoc-di-chu/">
-
-<!-- Favicon -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦆</text></svg>">
-
-<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<!-- Schema -->
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Mr. Duck","url":"https://leminhtu19022006-ai.github.io/hoc-di-chu/","contactPoint":{"@type":"ContactPoint","telephone":"+841900866819","contactType":"customer service"}}
-</script>
 
 <style>
 :root{--primary:#00469b;--primary-dark:#00337a;--accent:#d32f2f;--bg:#f4f4f4;--white:#fff;--text:#333;--gray:#666;--border:#ddd}
@@ -45,9 +18,6 @@ a{text-decoration:none;color:inherit;cursor:pointer}
 ul{list-style:none}
 .container{max-width:1200px;margin:0 auto;padding:0 15px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
-
-/* Ẩn H1 thông minh để không bị lỗi SEO Multiple H1 */
-h1[data-hidden="true"]{display:none !important}
 
 /* HEADER */
 header{background:var(--primary);color:var(--white);position:sticky;top:0;z-index:1000;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
@@ -85,7 +55,7 @@ header{background:var(--primary);color:var(--white);position:sticky;top:0;z-inde
 /* BANNERS */
 .banner-home{position:relative;border-radius:12px;margin-top:20px;margin-bottom:30px;overflow:hidden;min-height:450px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(0,70,155,0.85),rgba(42,82,152,0.85)),url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1600&h=600&fit=crop') center/cover}
 .banner-home-content{text-align:center;color:white;padding:40px;position:relative;z-index:1}
-.banner-home h1{font-size:48px;margin-bottom:15px;text-shadow:2px 2px 12px rgba(0,0,0,0.5)}
+.banner-home h2{font-size:48px;margin-bottom:15px;text-shadow:2px 2px 12px rgba(0,0,0,0.5)}
 .banner-home p{font-size:20px;margin-bottom:30px;text-shadow:1px 1px 6px rgba(0,0,0,0.5)}
 .banner-category{position:relative;border-radius:8px;margin-bottom:20px;overflow:hidden;min-height:220px;display:flex;align-items:center;justify-content:center;color:white;background-size:cover;background-position:center}
 .banner-category h2{font-size:36px;text-shadow:2px 2px 10px rgba(0,0,0,0.6);position:relative;z-index:2;background:rgba(0,0,0,0.4);padding:15px 30px;border-radius:8px;backdrop-filter:blur(4px)}
@@ -171,7 +141,7 @@ footer{background:var(--primary);color:var(--white);padding:50px 0 25px;margin-t
 .footer-content{grid-template-columns:1fr;text-align:center;gap:30px}
 .detail-container{flex-direction:column;padding:20px;gap:30px}
 .detail-img-box{max-width:100%;min-height:300px}
-.banner-home h1{font-size:32px}
+.banner-home h2{font-size:32px}
 .banner-home{min-height:350px}
 .banner-category h2{font-size:24px}
 }
@@ -182,9 +152,12 @@ footer{background:var(--primary);color:var(--white);padding:50px 0 25px;margin-t
 <!-- HEADER -->
 <header>
 <div class="container top-header">
+<!-- CHỈ CÓ DUY NHẤT 1 THẺ H1 NẰM Ở LOGO -->
 <a href="/" class="logo" aria-label="Trang chủ Mr. Duck">
+<h1 style="display:flex;align-items:center;gap:10px;margin:0;font-size:inherit;color:inherit;">
 <span class="duck-icon">🦆</span>
 <span class="brand-name">MR. DUCK</span>
+</h1>
 </a>
 <form class="search-bar" role="search" action="/search" method="get">
 <label for="search-input" class="sr-only">Tìm kiếm sản phẩm</label>
@@ -230,11 +203,13 @@ footer{background:var(--primary);color:var(--white);padding:50px 0 25px;margin-t
 <section id="page-home" class="page-section active">
 <div class="banner-home">
 <div class="banner-home-content">
-<h1 id="home-title">🦆 Chào mừng đến với Mr. Duck</h1>
+<!-- Đã chuyển H1 thành H2 -->
+<h2 id="home-title">🦆 Chào mừng đến với Mr. Duck</h2>
 <p>Hệ thống bán lẻ dụng cụ học tập & văn phòng phẩm chính hãng</p>
 <button class="btn btn-primary btn-large" style="width:auto;" onclick="navigateTo('category','hoc-tap')">Mua sắm ngay</button>
 </div>
 </div>
+<!-- Đã chuyển H2 thành H2 (Giữ nguyên) -->
 <h2 class="page-title">Sản phẩm nổi bật</h2>
 <div class="product-grid" id="home-product-grid"></div>
 </section>
@@ -244,7 +219,8 @@ footer{background:var(--primary);color:var(--white);padding:50px 0 25px;margin-t
 <nav class="breadcrumb" aria-label="Breadcrumb">
 <a href="/">Trang chủ</a> / <a href="/danh-muc">Danh mục</a> / <span id="breadcrumb-category-name">Danh mục</span>
 </nav>
-<h1 class="page-title" id="category-title" style="display:none;">Danh mục sản phẩm</h1>
+<!-- Đã chuyển H1 thành H2 -->
+<h2 class="page-title" id="category-title">Danh mục sản phẩm</h2>
 <div class="main-content">
 <aside class="sidebar" aria-label="Bộ lọc sản phẩm">
 <div class="filter-group"><h3 class="filter-title">Sắp xếp <i class="fa-solid fa-angle-down" aria-hidden="true"></i></h3></div>
@@ -350,21 +326,14 @@ var categoryBanners={
 
 var cartCount=0;
 
-// HÀM ĐIỀU HƯỚNG ĐÃ ĐƯỢC SỬA LỖI
+// HÀM ĐIỀU HƯỚNG
 function navigateTo(pageName,categorySlug,productId){
-    // 1. Ẩn tất cả các section
     var sections = document.querySelectorAll('.page-section');
-    for (var i = 0; i < sections.length; i++) {
-        sections[i].classList.remove('active');
-    }
+    for (var i = 0; i < sections.length; i++) { sections[i].classList.remove('active'); }
     
-    // 2. Xóa active trên menu
     var navItems = document.querySelectorAll('.nav-list li');
-    for (var j = 0; j < navItems.length; j++) {
-        navItems[j].classList.remove('active');
-    }
+    for (var j = 0; j < navItems.length; j++) { navItems[j].classList.remove('active'); }
 
-    // 3. Hiển thị section tương ứng
     if(pageName === 'home'){
         document.getElementById('page-home').classList.add('active');
         document.getElementById('nav-home').classList.add('active');
@@ -377,15 +346,12 @@ function navigateTo(pageName,categorySlug,productId){
         if(categorySlug === 'my-thuat') document.getElementById('nav-my-thuat').classList.add('active');
         if(categorySlug === 'outlet') document.getElementById('nav-outlet').classList.add('active');
         if(categorySlug === 'top-ban-chay') document.getElementById('nav-top').classList.add('active');
-        
         renderCategoryPage(categorySlug);
     } 
     else if(pageName === 'detail' && productId){
         document.getElementById('page-detail').classList.add('active');
         renderProductDetail(productId);
     }
-    
-    // Cuộn lên đầu trang
     window.scrollTo(0, 0);
 }
 
@@ -470,7 +436,8 @@ function renderProductDetail(productId){
 
     var html = '<div class="detail-img-box"><img src="' + product.image + '" alt="' + product.alt + '" loading="eager"></div>';
     html += '<div class="detail-info">';
-    html += '<h1 class="detail-title" id="detail-title">' + product.name + '</h1>';
+    // Đã chuyển H1 thành H2 ở đây
+    html += '<h2 class="detail-title" id="detail-title">' + product.name + '</h2>';
     html += '<div class="detail-meta">';
     html += '<span>Thương hiệu: <strong>Mr. Duck</strong></span>';
     html += '<span>Tình trạng: <strong style="color:' + (isOutOfStock ? 'red' : 'green') + '">' + product.status + '</strong></span>';
@@ -546,7 +513,6 @@ function renderHomeProducts(){
 // KHỞI TẠO KHI TẢI TRANG
 window.onload = function(){
     renderHomeProducts();
-    // Đặt mặc định là trang chủ
     document.getElementById('page-home').classList.add('active');
     document.getElementById('nav-home').classList.add('active');
 };
