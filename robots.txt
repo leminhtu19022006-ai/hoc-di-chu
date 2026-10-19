@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://leminhtu19022006-ai.github.io/hoc-di-chu/sitemap.xml
